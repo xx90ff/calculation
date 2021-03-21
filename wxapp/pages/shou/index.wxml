@@ -19,7 +19,7 @@
   </view>
   <view class="code bg-fff">
     <view class="code-con">
-      <image src="../assets/img-007.png" class="code-img"></image>
+      <image src="../assets/img-007.jpg" class="code-img"></image>
       <view>长按二维码、识别、关注</view>
     </view>
     <view class="read text-666">阅读 349</view>

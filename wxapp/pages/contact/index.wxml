@@ -9,7 +9,7 @@
       <span class="text-666 mr-20">算命大师</span>
       <!-- <image class="shou-icon mr-20" src="../assets/img-006.png"></image> -->
       <span class="text-gray-blue mr-20">算命</span>
-      <span class="text-666">2020-12-12</span>
+      <span class="text-666">2021-03-21</span>
     </view>
   </view>
   <view class="code-title bg-fff">
@@ -19,7 +19,7 @@
   <view class="code bg-fff">
     <view class="code-con">
       <view>长按二维码、识别加好友</view>
-      <image src="../assets/img-007.png" class="code-img"></image>
+      <image src="../assets/img-007.jpg" class="code-img"></image>
     </view>
     <view class="read text-666">阅读 349</view>
   </view>

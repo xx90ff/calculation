@@ -3,19 +3,19 @@
     老黄历
   </view>
   <view class="title">
-    <view class="title-top">2021年3月21日</view>
+    <view class="title-top">{{selectedDay.realYear}}年{{selectedDay.fullMonthString}}月{{selectedDay.fullDayString}}日</view>
     <view class="date">
-      <image class="date-icon" src="../assets/img-001.png"></image>
+      <image bind:tap="doShowPrevOrNextDayCalendar" data-day="{{selectedDay.prevDayInfo.realDay}}" data-flag="prev" data-month="{{selectedDay.prevDayInfo.realMonth}}" data-year="{{selectedDay.prevDayInfo.realYear}}" class="date-icon" src="../assets/img-001.png"></image>
       <view class="date-con">
-        <view class="date-top">农历二月初九</view>
+        <view class="date-top">农历{{selectedDay.lunarInfo.IMonthCn}}{{selectedDay.lunarInfo.IDayCn}}</view>
         <view class="date-bottom">
-          <span>辛丑牛年</span>
-          <span>辛卯月</span>
-          <span>戊辰日</span>
-          <span>星期日</span>
+          <span>{{selectedDay.lunarInfo.gzYear}}{{selectedDay.lunarInfo.Animal}}年</span>
+          <span>{{selectedDay.lunarInfo.gzMonth}}月</span>
+          <span>{{selectedDay.lunarInfo.gzDay}}日</span>
+          <span>{{selectedDay.lunarInfo.ncWeek}}</span>
         </view>
       </view>
-      <image class="date-icon" src="../assets/img-002.png"></image>
+      <image bind:tap="doShowPrevOrNextDayCalendar" data-day="{{selectedDay.nextDayInfo.realDay}}" data-flag="next" data-month="{{selectedDay.nextDayInfo.realMonth}}" data-year="{{selectedDay.nextDayInfo.realYear}}" class="date-icon" src="../assets/img-002.png"></image>
     </view>
   </view>
   <view class="content">
@@ -23,101 +23,85 @@
       <view class="con-top">
         <view class="con-top-1">
           <p>宜</p>
-          <span>扫舍</span>
-          <span>祭祀</span>
-          <span>塞穴</span>
+          <span>{{selectedDay.chineseCalendarInfo.yi}}</span>
         </view>
         <view class="con-top-2">
           <p>忌</p>
-          <span>嫁娶</span>
-          <span>栽种</span>
-          <span>安葬</span>
-          <span>作灶</span>
+          <span>{{selectedDay.chineseCalendarInfo.ji}}</span>
         </view>
       </view>
       <view class="time-con">
         <view class="time-con-title">时辰凶吉</view>
         <view class="time-lists">
-          <view class="time-list">任子凶</view>
-          <view class="time-list">癸丑凶</view>
-          <view class="time-list">任子凶</view>
-          <view class="time-list">癸丑凶</view>
-          <view class="time-list active">任子凶</view>
-          <view class="time-list">癸丑凶</view>
-          <view class="time-list">任子凶</view>
-          <view class="time-list">癸丑凶</view>
-          <view class="time-list">任子凶</view>
-          <view class="time-list">癸丑凶</view>
-          <view class="time-list">任子凶</view>
-          <view class="time-list">癸丑凶</view>
+          <view class="time-list {{item.isNow?'active':''}}" wx:for="{{selectedDay.hoursJixiong}}" wx:key="indexNum">{{item.jixiongString}}</view>
         </view>
       </view>
       <view class="add-1">
         <view class="add-list">
           <view class="add-list-top">财神位</view>
-          <view class="add-list-bottom">正北</view>
+          <view class="add-list-bottom">{{selectedDay.chineseCalendarInfo.jishenwei.CaiShen}}</view>
         </view>
         <view class="add-list">
-          <view class="add-list-top">财神位</view>
-          <view class="add-list-bottom">正北</view>
+          <view class="add-list-top">福神位</view>
+          <view class="add-list-bottom">{{selectedDay.chineseCalendarInfo.jishenwei.FuShen}}</view>
         </view>
         <view class="add-list">
-          <view class="add-list-top">财神位</view>
-          <view class="add-list-bottom">正北</view>
+          <view class="add-list-top">喜神位</view>
+          <view class="add-list-bottom">{{selectedDay.chineseCalendarInfo.jishenwei.XiShen}}</view>
         </view>
         <view class="add-list">
-          <view class="add-list-top">财神位</view>
-          <view class="add-list-bottom">正北</view>
-        </view>
-      </view>
-      <view class="add-1">
-        <view class="add-list">
-          <view class="add-list-top">财神位</view>
-          <view class="add-list-bottom">正北</view>
-        </view>
-        <view class="add-list">
-          <view class="add-list-top">财神位</view>
-          <view class="add-list-bottom">正北</view>
-        </view>
-        <view class="add-list">
-          <view class="add-list-top">财神位</view>
-          <view class="add-list-bottom">正北</view>
+          <view class="add-list-top">贵人位</view>
+          <view class="add-list-bottom">{{selectedDay.chineseCalendarInfo.jishenwei.YangGuiRen}}</view>
         </view>
       </view>
       <view class="add-1">
         <view class="add-list">
-          <view class="add-list-top">财神位</view>
-          <view class="add-list-bottom">正北</view>
+          <view class="add-list-top">黄道吉日</view>
+          <view class="add-list-bottom">{{selectedDay.chineseCalendarInfo.jianchu}}</view>
+        </view>
+        <view class="add-list">
+          <view class="add-list-top">冲煞</view>
+          <view class="add-list-bottom">{{selectedDay.chineseCalendarInfo.cs}}</view>
+        </view>
+        <view class="add-list">
+          <view class="add-list-top">五行</view>
+          <view class="add-list-bottom">{{selectedDay.chineseCalendarInfo.wx}}</view>
+        </view>
+      </view>
+      <view class="add-1">
+        <view class="add-list">
+          <view class="add-list-top">二十八星宿</view>
+          <view class="add-list-bottom">{{selectedDay.chineseCalendarInfo.stars28}}</view>
         </view>
         <view class="add-list flex-15">
-          <view class="add-list-top">财神位</view>
-          <view class="add-list-bottom">但丰富的水分法定</view>
-          <view class="add-list-bottom">但丰富的水分法定</view>
+          <view class="add-list-top">彭祖百忌</view>
+          <view class="add-list-bottom">{{selectedDay.chineseCalendarInfo.pzbj.tiangan}}</view>
+          <view class="add-list-bottom">{{selectedDay.chineseCalendarInfo.pzbj.dizhi}}</view>
         </view>
         <view class="add-list">
-          <view class="add-list-top">财神位</view>
-          <view class="add-list-bottom">正北</view>
+          <view class="add-list-top">值日神</view>
+          <view class="add-list-bottom">{{selectedDay.chineseCalendarInfo.zhishen}}</view>
         </view>
       </view>
       <view class="add-1">
         <view class="add-list">
-          <view class="add-list-top">财神位</view>
-          <view class="add-list-bottom">正北</view>
+          <view class="add-list-top">吉神</view>
+          <view class="add-list-bottom">{{selectedDay.chineseCalendarInfo.jsyq}}</view>
         </view>
         <view class="add-list">
-          <view class="add-list-top">财神位</view>
-          <view class="add-list-bottom">正北</view>
+          <view class="add-list-top">今日胎神</view>
+          <view class="add-list-bottom">{{selectedDay.chineseCalendarInfo.taishen}}</view>
         </view>
         <view class="add-list">
-          <view class="add-list-top">财神位</view>
-          <view class="add-list-bottom">正北</view>
+          <view class="add-list-top">凶神</view>
+          <view class="add-list-bottom">{{selectedDay.chineseCalendarInfo.xsyj}}</view>
         </view>
       </view>
     </view>
   </view>
   <view class="bottom">
     <view class="active bottom-list">
-      <image src="../assets/img-003.png"></image>
+      <image src="../assets/img-003.jpg"></image>
       <view>点击选择服务</view>
     </view>
     <view class="bottom-list" bindtap="toShou">
@@ -125,15 +109,15 @@
       <view>手相报告</view>
     </view>
     <view bindtap="toSuan" class="bottom-list">
-      <image src="../assets/img-003.png"></image>
+      <image src="../assets/img-008.jpg"></image>
       <view>算命大全</view>
     </view>
     <view bindtap="toQi" class="bottom-list">
-      <image src="../assets/img-004.png"></image>
+      <image src="../assets/img-009.jpg"></image>
       <view>起名测名</view>
     </view>
     <view bindtap="toContact" class="bottom-list">
-      <image src="../assets/img-003.png"></image>
+      <image src="../assets/img-010.jpg"></image>
       <view>联系大师</view>
     </view>
   </view>

@@ -9,7 +9,7 @@
       <span class="text-666">点击关注</span>
       <image class="shou-icon mr-20" src="../assets/img-006.png"></image>
       <span class="text-gray-blue mr-20">算命</span>
-      <span class="text-666">2032-32-32</span>
+      <span class="text-666">2021-03-21</span>
     </view>
   </view>
   <view class="code-title bg-fff">
@@ -19,7 +19,7 @@
   </view>
   <view class="code bg-fff">
     <view class="code-con">
-      <image src="../assets/img-007.png" class="code-img"></image>
+      <image src="../assets/img-007.jpg" class="code-img"></image>
       <view>长按二维码、识别、关注</view>
     </view>
     <view class="read text-666">阅读 32.9万</view>

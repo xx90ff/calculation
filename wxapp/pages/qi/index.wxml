@@ -4,12 +4,12 @@
     <image bindtap="toBack" src="../assets/img-005.png"></image>
   </view>
   <view class="title bg-fff">
-    <view class="tilte-top">扫码关注手相平台</view>
+    <view class="tilte-top">扫码关注起名公众号</view>
     <view class="title-bottom ">
       <span class="text-666">点击关注</span>
       <image class="shou-icon mr-20" src="../assets/img-006.png"></image>
-      <span class="text-gray-blue mr-20">起名平台</span>
-      <span class="text-666">2021-11-22</span>
+      <span class="text-gray-blue mr-20">起名</span>
+      <span class="text-666">2021-03-21</span>
     </view>
   </view>
   <view class="code-title bg-fff">
@@ -21,7 +21,7 @@
   </view>
   <view class="code bg-fff">
     <view class="code-con">
-      <image src="../assets/img-007.png" class="code-img"></image>
+      <image src="../assets/img-007.jpg" class="code-img"></image>
       <view>长按二维码、识别、关注</view>
     </view>
     <view class="read text-666">阅读 349</view>
