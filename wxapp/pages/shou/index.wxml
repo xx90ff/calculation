@@ -1,0 +1,27 @@
+<!--pages/shou/index.wxml-->
+<view class="index">
+  <view class="top">
+    <image bindtap="toBack" src="../assets/img-005.png"></image>
+  </view>
+  <view class="title bg-fff">
+    <view class="tilte-top">扫码关注手相平台</view>
+    <view class="title-bottom ">
+      <span class="text-666">点击关注</span>
+      <image class="shou-icon mr-20" src="../assets/img-006.png"></image>
+      <span class="text-gray-blue mr-20">手相平台</span>
+      <span class="text-666">昨天</span>
+    </view>
+  </view>
+  <view class="code-title bg-fff">
+    <span>【手相分析</span>
+    <span class="color-red">·</span>
+    <span>请扫码关注】</span>
+  </view>
+  <view class="code bg-fff">
+    <view class="code-con">
+      <image src="../assets/img-007.png" class="code-img"></image>
+      <view>长按二维码、识别、关注</view>
+    </view>
+    <view class="read text-666">阅读 349</view>
+  </view>
+</view>

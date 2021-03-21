@@ -1,0 +1,26 @@
+<!--pages/shou/index.wxml-->
+<view class="index">
+  <view class="top">
+    <image bindtap="toBack" src="../assets/img-005.png"></image>
+  </view>
+  <view class="title bg-fff">
+    <view class="tilte-top">大师亲算服务</view>
+    <view class="title-bottom ">
+      <span class="text-666 mr-20">算命大师</span>
+      <!-- <image class="shou-icon mr-20" src="../assets/img-006.png"></image> -->
+      <span class="text-gray-blue mr-20">算命</span>
+      <span class="text-666">2020-12-12</span>
+    </view>
+  </view>
+  <view class="code-title bg-fff">
+   <view>如果你需要大师亲算</view>
+   <view class="mt-10">请加大师私人微信号</view>
+  </view>
+  <view class="code bg-fff">
+    <view class="code-con">
+      <view>长按二维码、识别加好友</view>
+      <image src="../assets/img-007.png" class="code-img"></image>
+    </view>
+    <view class="read text-666">阅读 349</view>
+  </view>
+</view>

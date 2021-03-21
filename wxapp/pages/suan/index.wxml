@@ -1,0 +1,27 @@
+<!--pages/shou/index.wxml-->
+<view class="index">
+  <view class="top">
+    <image bindtap="toBack" src="../assets/img-005.png"></image>
+  </view>
+  <view class="title bg-fff">
+    <view class="tilte-top">扫码关注算命平台</view>
+    <view class="title-bottom ">
+      <span class="text-666">点击关注</span>
+      <image class="shou-icon mr-20" src="../assets/img-006.png"></image>
+      <span class="text-gray-blue mr-20">算命</span>
+      <span class="text-666">2032-32-32</span>
+    </view>
+  </view>
+  <view class="code-title bg-fff">
+    <span>【扫码关注</span>
+    <span class="color-red">·</span>
+    <span>开始测算】</span>
+  </view>
+  <view class="code bg-fff">
+    <view class="code-con">
+      <image src="../assets/img-007.png" class="code-img"></image>
+      <view>长按二维码、识别、关注</view>
+    </view>
+    <view class="read text-666">阅读 32.9万</view>
+  </view>
+</view>

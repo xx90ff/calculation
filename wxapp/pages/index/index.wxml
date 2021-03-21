@@ -1,0 +1,140 @@
+<view class="index">
+  <view class="top">
+    老黄历
+  </view>
+  <view class="title">
+    <view class="title-top">2021年3月21日</view>
+    <view class="date">
+      <image class="date-icon" src="../assets/img-001.png"></image>
+      <view class="date-con">
+        <view class="date-top">农历二月初九</view>
+        <view class="date-bottom">
+          <span>辛丑牛年</span>
+          <span>辛卯月</span>
+          <span>戊辰日</span>
+          <span>星期日</span>
+        </view>
+      </view>
+      <image class="date-icon" src="../assets/img-002.png"></image>
+    </view>
+  </view>
+  <view class="content">
+    <view class="con">
+      <view class="con-top">
+        <view class="con-top-1">
+          <p>宜</p>
+          <span>扫舍</span>
+          <span>祭祀</span>
+          <span>塞穴</span>
+        </view>
+        <view class="con-top-2">
+          <p>忌</p>
+          <span>嫁娶</span>
+          <span>栽种</span>
+          <span>安葬</span>
+          <span>作灶</span>
+        </view>
+      </view>
+      <view class="time-con">
+        <view class="time-con-title">时辰凶吉</view>
+        <view class="time-lists">
+          <view class="time-list">任子凶</view>
+          <view class="time-list">癸丑凶</view>
+          <view class="time-list">任子凶</view>
+          <view class="time-list">癸丑凶</view>
+          <view class="time-list active">任子凶</view>
+          <view class="time-list">癸丑凶</view>
+          <view class="time-list">任子凶</view>
+          <view class="time-list">癸丑凶</view>
+          <view class="time-list">任子凶</view>
+          <view class="time-list">癸丑凶</view>
+          <view class="time-list">任子凶</view>
+          <view class="time-list">癸丑凶</view>
+        </view>
+      </view>
+      <view class="add-1">
+        <view class="add-list">
+          <view class="add-list-top">财神位</view>
+          <view class="add-list-bottom">正北</view>
+        </view>
+        <view class="add-list">
+          <view class="add-list-top">财神位</view>
+          <view class="add-list-bottom">正北</view>
+        </view>
+        <view class="add-list">
+          <view class="add-list-top">财神位</view>
+          <view class="add-list-bottom">正北</view>
+        </view>
+        <view class="add-list">
+          <view class="add-list-top">财神位</view>
+          <view class="add-list-bottom">正北</view>
+        </view>
+      </view>
+      <view class="add-1">
+        <view class="add-list">
+          <view class="add-list-top">财神位</view>
+          <view class="add-list-bottom">正北</view>
+        </view>
+        <view class="add-list">
+          <view class="add-list-top">财神位</view>
+          <view class="add-list-bottom">正北</view>
+        </view>
+        <view class="add-list">
+          <view class="add-list-top">财神位</view>
+          <view class="add-list-bottom">正北</view>
+        </view>
+      </view>
+      <view class="add-1">
+        <view class="add-list">
+          <view class="add-list-top">财神位</view>
+          <view class="add-list-bottom">正北</view>
+        </view>
+        <view class="add-list flex-15">
+          <view class="add-list-top">财神位</view>
+          <view class="add-list-bottom">但丰富的水分法定</view>
+          <view class="add-list-bottom">但丰富的水分法定</view>
+        </view>
+        <view class="add-list">
+          <view class="add-list-top">财神位</view>
+          <view class="add-list-bottom">正北</view>
+        </view>
+      </view>
+      <view class="add-1">
+        <view class="add-list">
+          <view class="add-list-top">财神位</view>
+          <view class="add-list-bottom">正北</view>
+        </view>
+        <view class="add-list">
+          <view class="add-list-top">财神位</view>
+          <view class="add-list-bottom">正北</view>
+        </view>
+        <view class="add-list">
+          <view class="add-list-top">财神位</view>
+          <view class="add-list-bottom">正北</view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="bottom">
+    <view class="active bottom-list">
+      <image src="../assets/img-003.png"></image>
+      <view>点击选择服务</view>
+    </view>
+    <view class="bottom-list" bindtap="toShou">
+      <image src="../assets/img-004.png"></image>
+      <view>手相报告</view>
+    </view>
+    <view bindtap="toSuan" class="bottom-list">
+      <image src="../assets/img-003.png"></image>
+      <view>算命大全</view>
+    </view>
+    <view bindtap="toQi" class="bottom-list">
+      <image src="../assets/img-004.png"></image>
+      <view>起名测名</view>
+    </view>
+    <view bindtap="toContact" class="bottom-list">
+      <image src="../assets/img-003.png"></image>
+      <view>联系大师</view>
+    </view>
+  </view>
+</view>
