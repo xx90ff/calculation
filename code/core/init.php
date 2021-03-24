@@ -60,19 +60,19 @@ foreach($sys_all as $key=>$sys_vel){
    }
 }
 //免费版表单增加按钮链接到付费测算
-$GLOBALS['config']['ff_url']['bazijp']="http://www.calculationq.com/?ac=bazijp";
+$GLOBALS['config']['ff_url']['bazijp']="http://yi.xfwbg.com/?ac=bazijp";
 $GLOBALS['config']['ff_url']['bazijp_t']="付费测算";
-$GLOBALS['config']['ff_url']['hehun']="http://www.calculationq.com/?ac=hehun";
+$GLOBALS['config']['ff_url']['hehun']="http://yi.xfwbg.com/?ac=hehun";
 $GLOBALS['config']['ff_url']['hehun_t']="付费测算";
-$GLOBALS['config']['ff_url']['xmpd']="http://www.calculationq.com/?ac=xmpd";
+$GLOBALS['config']['ff_url']['xmpd']="http://yi.xfwbg.com/?ac=xmpd";
 $GLOBALS['config']['ff_url']['xmpd_t']="付费测算";
-$GLOBALS['config']['ff_url']['ffqm']="http://www.calculationq.com/?ac=ffqm";
+$GLOBALS['config']['ff_url']['ffqm']="http://yi.xfwbg.com/?ac=ffqm";
 $GLOBALS['config']['ff_url']['ffqm_t']="付费测算";
-$GLOBALS['config']['ff_url']['xmfx']="http://www.calculationq.com/?ac=xmfx";
+$GLOBALS['config']['ff_url']['xmfx']="http://yi.xfwbg.com/?ac=xmfx";
 $GLOBALS['config']['ff_url']['xmfx_t']="付费测算";
-$GLOBALS['config']['ff_url']['bazi']="http://www.calculationq.com/?ac=bazi";
+$GLOBALS['config']['ff_url']['bazi']="http://yi.xfwbg.com/?ac=bazi";
 $GLOBALS['config']['ff_url']['bazi_t']="付费测算";
-$GLOBALS['config']['ff_url']['hmjx']="http://www.calculationq.com/?ac=hmjx";
+$GLOBALS['config']['ff_url']['hmjx']="http://yi.xfwbg.com/?ac=hmjx";
 $GLOBALS['config']['ff_url']['hmjx_t']="付费测算";
 tpl::assign('ff_url',$GLOBALS['config']['ff_url']);
 

@@ -19,7 +19,7 @@ define('PATH_DM_CONFIG', PATH_CONFIG . '/dm_config');
 define('COOKIE_DOMAIN', '');
 define('PHP_ERROR_LOG', false);//正式线上要改为false
 //主应用URL
-define('URL', 'http://www.calculationq.com');
+define('URL', 'http://yi.xfwbg.com');
 
 
 define('FILTER_KEYWORD', '115');//过滤词库  115 orther all
@@ -67,8 +67,8 @@ $GLOBALS['config']['db'] = array(
                         'master'  => 'localhost',
                         'slave' => array('localhost')
                      ),
-        'user'    => 'root',
-        'pass'    => 'root',
+        'user'    => 'calculation',
+        'pass'    => 'calculation',
         'name'    => 'calculation',
         'charset' => 'utf-8',
 );
