@@ -4,7 +4,7 @@
 define("client_id", "uwAbgjN959uvF8nS2dcwcEmOtWpzTGVe");
 define("client_secret", "XFgO5tG1OwZlPkMRfGMlKiBsPDPm4rVm");
 define("appid", "1584651221244428");
-define("redirect_uri", "https://yi.xfwbg.com/xzh/login.php");
+define("redirect_uri", "https://www.suanming.work/xzh/login.php");
 
 
 
