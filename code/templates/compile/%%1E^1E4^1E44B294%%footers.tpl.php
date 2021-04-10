@@ -1,7 +1,6 @@
-<?php /* Smarty version 2.6.25, created on 2021-03-19 14:16:04
+<?php /* Smarty version 2.6.25, created on 2021-04-10 17:56:37
          compiled from ./ffsm/footers.tpl */ ?>
 <link href="/statics/quanju.css" rel="stylesheet" type="text/css"/>
-<a class="tuiguang_1" href="?ac=tuiguang"><em>赚取佣金</em></a>
 <!--顶部文字提醒内容-->
 <script>
 window.requestAnimFrame = (function(){

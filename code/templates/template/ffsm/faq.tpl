@@ -21,7 +21,9 @@
 <div class="faq-menu">
 	<ul>
 		<li><a href="javascript:history.back(-1)"><img src="/statics/ffsm/ssxo/img/faq_back.png" alt="" class="bg2"><p>返回上页</p></a></li>
-		<li><a href="/?ac=tuiguang"><img src="/statics/ffsm/ssxo/img/tg_icon.png" alt="" class="bg2"><p>赚取佣金</p></a></li>
+{*
+
+*}
 		<li><a href="/?ac=member"><img src="/statics/ffsm/ssxo/img/faq_member.png" alt="" class="bg3"><p>个人中心</p></a></li>
 		<li><a href="javascript:void(0)" onclick="MobileChatWindow.openChatWindow()"><img src="/statics/ffsm/ssxo/img/lx_icon.png" alt="" class="bg5"><p>联系客服</p></a></li>
 

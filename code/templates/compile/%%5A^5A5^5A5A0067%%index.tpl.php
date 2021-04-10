@@ -1,4 +1,4 @@
-<?php /* Smarty version 2.6.25, created on 2021-03-21 10:24:29
+<?php /* Smarty version 2.6.25, created on 2021-04-05 22:08:55
          compiled from admin/index.tpl */ ?>
 <?php require_once(SMARTY_CORE_DIR . 'core.load_plugins.php');
 smarty_core_load_plugins(array('plugins' => array(array('modifier', 'replace', 'admin/index.tpl', 45, false),)), $this); ?>
@@ -18,7 +18,7 @@ smarty_core_load_plugins(array('plugins' => array(array('modifier', 'replace', '
     <div class="top-text">
         <span>欢迎您，</span><b><?php echo $this->_tpl_vars['user']['user_name']; ?>
 </b>
-        | <a href="http://www.calculationq.com/" target="_blank">网站主页</a>
+        | <a href="http://yi.xfwbg.com/" target="_blank">网站主页</a>
         <span id="alert_msg_ct" style="color:red;"></span>
         <a href="?ct=index&ac=loginout" class="logout">退出系统</a>
     </div>

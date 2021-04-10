@@ -60,19 +60,19 @@ foreach($sys_all as $key=>$sys_vel){
    }
 }
 //免费版表单增加按钮链接到付费测算
-$GLOBALS['config']['ff_url']['bazijp']="http://www.suanming.work/?ac=bazijp";
+$GLOBALS['config']['ff_url']['bazijp']="http://yi.xfwbg.com/?ac=bazijp";
 $GLOBALS['config']['ff_url']['bazijp_t']="付费测算";
-$GLOBALS['config']['ff_url']['hehun']="http://www.suanming.work/?ac=hehun";
+$GLOBALS['config']['ff_url']['hehun']="http://yi.xfwbg.com/?ac=hehun";
 $GLOBALS['config']['ff_url']['hehun_t']="付费测算";
-$GLOBALS['config']['ff_url']['xmpd']="http://www.suanming.work/?ac=xmpd";
+$GLOBALS['config']['ff_url']['xmpd']="http://yi.xfwbg.com/?ac=xmpd";
 $GLOBALS['config']['ff_url']['xmpd_t']="付费测算";
-$GLOBALS['config']['ff_url']['ffqm']="http://www.suanming.work/?ac=ffqm";
+$GLOBALS['config']['ff_url']['ffqm']="http://yi.xfwbg.com/?ac=ffqm";
 $GLOBALS['config']['ff_url']['ffqm_t']="付费测算";
-$GLOBALS['config']['ff_url']['xmfx']="http://www.suanming.work/?ac=xmfx";
+$GLOBALS['config']['ff_url']['xmfx']="http://yi.xfwbg.com/?ac=xmfx";
 $GLOBALS['config']['ff_url']['xmfx_t']="付费测算";
-$GLOBALS['config']['ff_url']['bazi']="http://www.suanming.work/?ac=bazi";
+$GLOBALS['config']['ff_url']['bazi']="http://yi.xfwbg.com/?ac=bazi";
 $GLOBALS['config']['ff_url']['bazi_t']="付费测算";
-$GLOBALS['config']['ff_url']['hmjx']="http://www.suanming.work/?ac=hmjx";
+$GLOBALS['config']['ff_url']['hmjx']="http://yi.xfwbg.com/?ac=hmjx";
 $GLOBALS['config']['ff_url']['hmjx_t']="付费测算";
 tpl::assign('ff_url',$GLOBALS['config']['ff_url']);
 

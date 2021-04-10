@@ -1,5 +1,4 @@
 <link href="/statics/quanju.css" rel="stylesheet" type="text/css"/>
-<a class="tuiguang_1" href="?ac=tuiguang"><em>赚取佣金</em></a>
 <!--顶部文字提醒内容-->
 <script>
 window.requestAnimFrame = (function(){
