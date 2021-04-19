@@ -67,9 +67,9 @@ $GLOBALS['config']['db'] = array(
                         'master'  => 'localhost',
                         'slave' => array('localhost')
                      ),
-        'user'    => 'root',
-        'pass'    => 'root',
-        'name'    => 'calculation',
+        'user'    => 'calcaulation',
+        'pass'    => 'calcaulation',
+        'name'    => 'calcaulation',
         'charset' => 'utf-8',
 );
 
