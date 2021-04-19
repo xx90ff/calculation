@@ -18,7 +18,7 @@ smarty_core_load_plugins(array('plugins' => array(array('modifier', 'replace', '
     <div class="top-text">
         <span>欢迎您，</span><b><?php echo $this->_tpl_vars['user']['user_name']; ?>
 </b>
-        | <a href="http://yi.xfwbg.com/" target="_blank">网站主页</a>
+        | <a href="http://www.suanming.work/" target="_blank">网站主页</a>
         <span id="alert_msg_ct" style="color:red;"></span>
         <a href="?ct=index&ac=loginout" class="logout">退出系统</a>
     </div>
@@ -53,4 +53,4 @@ smarty_core_load_plugins(array('plugins' => array(array('modifier', 'replace', '
 </script>
 <script type="text/javascript" src="images/js/main.js"></script>
 </body>
-</html>
+</html>

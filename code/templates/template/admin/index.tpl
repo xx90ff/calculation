@@ -13,7 +13,7 @@
     <div id="logo"><a href=""><img src="images/images/lg.png" alt="通用后台" /></a></div>
     <div class="top-text">
         <span>欢迎您，</span><b><{$user.user_name}></b>
-        | <a href="http://yi.xfwbg.com/" target="_blank">网站主页</a>
+        | <a href="http://www.suanming.work/" target="_blank">网站主页</a>
         <span id="alert_msg_ct" style="color:red;"></span>
         <a href="?ct=index&ac=loginout" class="logout">退出系统</a>
     </div>
